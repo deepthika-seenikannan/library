@@ -1,0 +1,92 @@
+html, body, #root {
+  margin: 0;
+}
+
+.home-container {
+  text-align: center;
+  font-family: Georgia;
+  /* background: url('/background.png') no-repeat center center fixed;
+  background-size: cover; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-logo {
+  width: 250px;
+  height: auto;
+}
+
+.home-title {
+  font-size: 5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.home-subtitle {
+  font-size: 2rem;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  color: #f0f0f0;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.lend-book-btn {
+  background-color: #f26b03;
+  color: #fff;
+}
+
+.return-book-btn {
+  background-color: #fbad03;
+  color: #fff;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 600px) {
+  .app-logo {
+    width: 80px;
+    margin-bottom: 15px;
+  }
+
+  .app-title {
+    font-size: 2rem;
+  }
+
+  .app-subtitle {
+    font-size: 1rem;
+  }
+
+  .btn {
+    width: 80%;
+    padding: 12px 0;
+    font-size: 14px;
+  }
+
+  .button-container {
+    flex-direction: column;
+  }
+}

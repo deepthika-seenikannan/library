@@ -1,0 +1,71 @@
+body {
+    font-family: Georgia;
+    background: url('/background.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background-color: #ffffffcc;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-logo {
+    width: 150px;
+    height: auto;
+}
+
+.login-title {
+    font-size: 26px;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.login-subtitle {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.login-username,.login-password {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.login-container input:focus {
+    border-color: #66a6ff;
+}
+
+.login-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #66a6ff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #558de8;
+}
