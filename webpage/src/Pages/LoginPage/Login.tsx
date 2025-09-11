@@ -14,35 +14,43 @@ export default function LoginPage() {
     const validUser = users.find(
       (u) => u.username === username && u.password === password
     );
-  
+
     if (validUser) {
       login(); // sets isLoggedIn = true
       navigate("/home", { replace: true }); // replaces history
     } else {
       alert("Invalid username or password");
     }
-  };  
+  };
 
   return (
     <div className="login-container">
       <img src="/logo.png" alt="Logo" className="login-logo" />
       <h1 className="login-title">MTS Tamil School Library</h1>
       <h1 className="login-subtitle">Login</h1>
-      <input
-        type="text"
-        className="login-username"
-        placeholder="Username"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
-      />
-      <input
-        type="password"
-        className="login-password"
-        placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <button className="login-button" onClick={handleLogin}>Login</button>
+      <form
+        className="login-form"
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleLogin();
+        }}
+      >
+        <input
+          type="text"
+          className="login-username"
+          placeholder="Username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
+        <input
+          type="password"
+          className="login-password"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <button className="login-button" type="submit">Login</button>
+      </form>
     </div>
   );
 }
