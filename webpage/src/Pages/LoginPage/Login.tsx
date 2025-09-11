@@ -27,7 +27,7 @@ export default function LoginPage() {
     <div className="login-container">
       <img src="/logo.png" alt="Logo" className="login-logo" />
       <h1 className="login-title">MTS Tamil School Library</h1>
-      <p className="login-subtitle">Login</p>
+      <h1 className="login-subtitle">Login</h1>
       <input
         type="text"
         className="login-username"

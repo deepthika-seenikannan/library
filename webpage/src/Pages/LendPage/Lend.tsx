@@ -13,7 +13,7 @@ export default function LendPage() {
         <input
           type="text"
         />
-        <div className="input student-dropdown">
+        {/* <div className="input student-dropdown">
           <select
             // value={selectedCategory}
             // onChange={(e) => setSelectedCategory(e.target.value)}
@@ -24,11 +24,16 @@ export default function LendPage() {
             <option value="furniture">Furniture</option>
             <option value="others">Others</option>
           </select>
-        </div>
-
+        </div> */}
       </div>
       <div className="input student-name">
         <label>Student Full Name</label>
+        <input
+          type="text"
+        />
+        <input
+          type="text"
+        />
         <input
           type="text"
         />
@@ -36,6 +41,9 @@ export default function LendPage() {
       <h4 className="book-details">Book Details</h4>
       <div className="input book-number">
         <label>Book Number</label>
+        <input
+          type="text"
+        />
         <input
           type="text"
         />
@@ -71,12 +79,14 @@ export default function LendPage() {
         <textarea
         />
       </div>
-      <button
-        onClick={() => navigate(-1)}
-        className="back-button"
-      >
-        Back
-      </button>
+      <div className="back-button-container">
+        <button
+          className="back-button"
+          onClick={() => navigate(-1)}
+        >
+          Back
+        </button>
+      </div>
     </div>
   );
 }
